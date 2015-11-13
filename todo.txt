@@ -1,0 +1,16 @@
+TODO :
+
+checking $VAR from env
+executing binaries from PATH env
+executing binaries from current directories
+builtins : cd / pwd with options
+handling cd - / cd ~ / cd
+builtins setenv / unsetenv / env
+pipes
+redirections
+minishell inside minishell
+
+CHECKLIST :
+
+perl -e 'print "\x00"' directly in shell and piped to minishell
+ctrl + d inside shell
