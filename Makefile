@@ -5,7 +5,7 @@
 ## Login   <egloff_j@etna-alternance.net>
 ## 
 ## Started on  Thu Apr  3 09:04:32 2014 EGLOFF Julien
-## Last update Fri Nov 13 16:36:35 2015 Julien EGLOFF
+## Last update Fri Nov 13 16:58:28 2015 Julien EGLOFF
 ##
 
 CC	= 	gcc
@@ -18,7 +18,7 @@ BDIR	=	obj
 SRC 	:= 	$(shell find $(SRCDIR) -name '*.c')
 OBJ 	:= 	$(addprefix $(BDIR)/,$(SRC:%.c=%.o))
 
-RM	= 	rm -f
+RM	= 	rm -rf
 
 CFLAGS	= 	-W -Wall -Werror -ansi -pedantic
 
@@ -44,12 +44,11 @@ makelib:
 		$(MAKE) -C ./lib/
 
 clean:
-		$(RM) $(OBJ)
+		$(RM) $(BDIR)
 		$(MAKE) -C ./lib/ clean
 
 fclean:		clean
-		$(RM) $(NAME).so
-		$(RM) $(NAME).a
+		$(RM) $(NAME)
 		$(MAKE) -C ./lib/ fclean
 
 re:		fclean all
