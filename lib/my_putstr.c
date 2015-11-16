@@ -5,16 +5,13 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Tue Mar 25 09:41:00 2014 EGLOFF Julien
-** Last update Mon Jun 16 10:39:04 2014 Julien EGLOFF
+** Last update Mon Nov 16 14:07:00 2015 EGLOFF Julien
 */
 
 #include "libmy.h"
 
 int	my_putstr(const char *str)
 {
-  int	i;
-
-  for (i = 0; str[i]; i++)
-    my_putchar(str[i]);
+  xwrite(STDIN_FILENO, str, my_strlen(str));
   return (0);
 }

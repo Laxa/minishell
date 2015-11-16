@@ -5,7 +5,7 @@
 ## Login   <egloff_j@etna-alternance.net>
 ## 
 ## Started on  Thu Apr  3 09:04:32 2014 EGLOFF Julien
-## Last update Fri Nov 13 16:46:16 2015 Julien EGLOFF
+## Last update Mon Nov 16 21:48:52 2015 EGLOFF Julien
 ##
 
 CC	= gcc
@@ -46,7 +46,11 @@ SRC	= my_find_prime_sup.c	\
 	  my_strupcase.c	\
 	  my_swap.c		\
 	  my_strdup.c		\
-	  xmalloc.c
+	  xmalloc.c		\
+	  xexecve.c		\
+	  xaccess.c		\
+	  xwrite.c		\
+	  xread.c
 
 
 OBJ	= $(SRC:%.c=%.o)

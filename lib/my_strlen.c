@@ -5,12 +5,12 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Tue Mar 25 10:10:38 2014 EGLOFF Julien
-** Last update Sat Mar 29 13:45:40 2014 EGLOFF Julien
+** Last update Mon Nov 16 14:07:14 2015 EGLOFF Julien
 */
 
 #include "libmy.h"
 
-int	my_strlen(char *str)
+int	my_strlen(const char *str)
 {
   int	i;
 

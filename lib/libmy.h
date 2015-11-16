@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Sat Mar 29 11:52:44 2014 EGLOFF Julien
-** Last update Fri Nov 13 16:46:37 2015 Julien EGLOFF
+** Last update Mon Nov 16 21:48:39 2015 EGLOFF Julien
 */
 
 #ifndef __LIBMY_A__
@@ -18,7 +18,7 @@ int     my_isneg(int n);
 int     my_put_nbr(int nb);
 int     my_swap(int *a, int *b);
 int     my_putstr(const char *str);
-int     my_strlen(char *str);
+int     my_strlen(const char *str);
 int     my_getnbr(char *str);
 void    my_sort_int_tab(int *tab, int size);
 int     my_power_rec(int nb, int power);
@@ -48,8 +48,15 @@ int	my_getnbr_base(char *str, char *base);
 int	find_pos(char c, char *str);
 char	*my_strdup(char *str);
 char	**my_str_to_wordtab(char *str);
+int     tab_size(char **tab);
+void    free_tab(char **tab);
 
 /* x functions */
-void    *xmalloc(size_t size);
+
+void            *xmalloc(size_t size);
+ssize_t         xwrite(int fd, const void *buf, size_t count);
+ssize_t         xread(int fd, void *buf, size_t count);
+int             xexecve(const char *filename, char *const argv[], char *const envp[]);
+int             xaccess(const char *pathname, int mode);
 
 #endif /* __LIBMY_A__ */

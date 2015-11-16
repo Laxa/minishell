@@ -9,6 +9,7 @@ builtins setenv / unsetenv / env
 pipes
 redirections
 minishell inside minishell
+norme
 
 CHECKLIST :
 
