@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Mon Mar 31 18:49:41 2014 EGLOFF Julien
-** Last update Mon Nov 16 21:52:07 2015 EGLOFF Julien
+** Last update Fri Nov 20 11:18:23 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
@@ -62,8 +62,7 @@ static int      size_next_word(char *str, int i)
   int	size;
 
   size = 0;
-  while ((str[i] >= 'a' && str[i] <= 'z') ||
-	 (str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= '0' && str[i] <= '9'))
+  while (str[i] != ' ' && str[i] != '\n' && str[i] != '\t')
   {
     size++;
     i++;
@@ -75,17 +74,17 @@ static int      number_of_word(char *str)
 {
   int	i;
   int	word;
+  int   length;
 
   word = 0;
-  for (i = 0; i < my_strlen(str); i++)
+  length = my_strlen(str);
+  for (i = 0; i < length; i++)
   {
-    if ((str[i] >= 'a' && str[i] <= 'z') ||
-        (str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= '0' && str[i] <= '9'))
+    if (str[i] != ' ' && str[i] != '\n' && str[i] != '\t')
     {
       word++;
-      while (i < my_strlen(str) && ((str[i] >= 'A' && str[i] <= 'Z') ||
-                                    (str[i] >= '0' && str[i] <= '9') ||
-                                    (str[i] >= 'a' && str[i] <= 'z')))
+      while (i < length && str[i] != ' '
+             && str[i] != '\n' && str[i] != '\t')
         i++;
     }
   }
