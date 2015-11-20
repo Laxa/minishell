@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Sat Mar 29 09:29:18 2014 EGLOFF Julien
-** Last update Mon Nov 16 14:06:35 2015 EGLOFF Julien
+** Last update Fri Nov 20 13:51:25 2015 EGLOFF Julien
 */
 
 #include <unistd.h>
@@ -13,5 +13,5 @@
 
 void	my_putchar(char c)
 {
-  xwrite(STDIN_FILENO, &c, 1);
+  xwrite(STDOUT_FILENO, &c, 1);
 }

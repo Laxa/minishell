@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 13 16:39:27 2015 Julien EGLOFF
-** Last update Fri Nov 20 11:26:13 2015 EGLOFF Julien
+** Last update Fri Nov 20 13:56:01 2015 EGLOFF Julien
 */
 
 #include <string.h>
@@ -22,9 +22,9 @@ void    print_errno(const char *msg)
 {
   char  *err;
 
-  my_putstr(msg);
-  my_putstr(": ");
+  xwrite(STDERR_FILENO, msg, my_strlen(msg));
+  xwrite(STDERR_FILENO, ": ", 2);
   err = strerror(errno);
-  my_putstr(err);
-  my_putchar('\n');
+  xwrite(STDERR_FILENO, err, my_strlen(err));
+  xwrite(STDERR_FILENO, "\n", 1);
 }

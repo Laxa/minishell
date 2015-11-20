@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 13 15:52:09 2015 Julien EGLOFF
-** Last update Fri Nov 20 13:24:46 2015 EGLOFF Julien
+** Last update Fri Nov 20 13:57:44 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
@@ -53,10 +53,13 @@ static void     main_loop(void)
   ret = 42;
   while (ret && !shell->quit)
   {
-    xwrite(STDIN_FILENO, "$> ", 3);
+    xwrite(STDOUT_FILENO, "$> ", 3);
     ret = xread(STDIN_FILENO, buffer, BUFFER_SIZE);
     if (ret)
+    {
+      buffer[ret - 1] = 0;
       parse(buffer, shell);
+    }
   }
   my_putstr("exit\n");
 }
