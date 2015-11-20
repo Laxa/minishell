@@ -5,28 +5,30 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Mon Nov 16 18:16:59 2015 EGLOFF Julien
-** Last update Fri Nov 20 11:56:28 2015 EGLOFF Julien
+** Last update Fri Nov 20 13:26:18 2015 EGLOFF Julien
 */
 
 #include <sys/stat.h>
 #include <sys/wait.h>
 #include <unistd.h>
+#include "parse.h"
 #include "libmy.h"
 #include "utils.h"
 
+static int      check_builtins(char **tab, t_shell *shell);
 static void     exec(char **tab, char **env);
 
-void            parse(char *cmd, char **env)
+void            parse(char *cmd, t_shell *shell)
 {
   char          **tab;
 
   tab = my_str_to_wordtab(cmd);
-  /* check builtins first */
   /* check $PATH after */
   if (tab[0])
   {
-    if (access(tab[0], F_OK | X_OK | R_OK) == 0)
-      exec(tab, env);
+    if (check_builtins(tab, shell));
+    else if (access(tab[0], F_OK | X_OK | R_OK) == 0)
+      exec(tab, NULL);
     else
       print_errno(tab[0]);
   }
@@ -44,4 +46,23 @@ static void     exec(char **tab, char **env)
     wait(NULL);
   else
     print_errno(tab[0]);
+}
+
+static int      check_builtins(char **tab, t_shell *shell)
+{
+  t_builtins    *cur;
+  int           flag;
+
+  flag = 0;
+  cur = shell->builtins;
+  while (cur)
+  {
+    if (!my_strcmp(tab[0], cur->name))
+    {
+      cur->f(tab, shell);
+      flag = 1;
+    }
+    cur = cur->next;
+  }
+  return (flag);
 }

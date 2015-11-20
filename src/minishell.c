@@ -5,39 +5,44 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 13 15:52:09 2015 Julien EGLOFF
-** Last update Fri Nov 20 11:29:56 2015 EGLOFF Julien
+** Last update Fri Nov 20 13:24:46 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
 #include "minishell.h"
+#include "builtins.h"
 #include "parse.h"
 #include "libmy.h"
+#include "env.h"
 
-static void     init_minishell(UNUSED char **env);
+static void     init_minishell(char **env);
 static void     clean_and_exit_minishell(void);
 static void     main_loop(void);
 
 static t_shell  *shell;
 
-int     main(UNUSED int argc, UNUSED char **argv, UNUSED char **env)
+int     main(UNUSED int argc, UNUSED char **argv, char **env)
 {
   init_minishell(env);
   main_loop();
   clean_and_exit_minishell();
-  return (0);
+  return (EXIT_SUCCESS);
 }
 
-static void     init_minishell(UNUSED char **env)
+static void     init_minishell(char **env)
 {
   shell = xmalloc(sizeof(t_shell));
-  /* init_builtins */
-  /* init_env */
+  shell->quit = 0;
+  init_builtins(shell);
+  init_env(shell, env);
 }
 
 static void     clean_and_exit_minishell(void)
 {
+  free_builtins(shell);
+  free_env(shell);
   free(shell);
-  /* clean env */
+  shell = NULL;
 }
 
 static void     main_loop(void)
@@ -46,12 +51,12 @@ static void     main_loop(void)
   ssize_t       ret;
 
   ret = 42;
-  while (ret)
+  while (ret && !shell->quit)
   {
     xwrite(STDIN_FILENO, "$> ", 3);
     ret = xread(STDIN_FILENO, buffer, BUFFER_SIZE);
     if (ret)
-      parse(buffer, NULL);
+      parse(buffer, shell);
   }
   my_putstr("exit\n");
 }

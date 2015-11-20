@@ -10,6 +10,7 @@ pipes
 redirections
 minishell inside minishell
 norme
+remove useless UNUSED
 
 CHECKLIST :
 
