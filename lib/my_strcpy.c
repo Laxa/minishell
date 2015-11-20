@@ -5,12 +5,12 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Mar 28 09:07:01 2014 EGLOFF Julien
-** Last update Sat Mar 29 13:46:06 2014 EGLOFF Julien
+** Last update Fri Nov 20 21:10:43 2015 EGLOFF Julien
 */
 
 #include "libmy.h"
 
-char	*my_strcpy(char *dest, char *src)
+char	*my_strcpy(char *dest, const char *src)
 {
   int	i;
 

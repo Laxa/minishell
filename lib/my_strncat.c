@@ -5,12 +5,12 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Sat Mar 29 10:10:10 2014 EGLOFF Julien
-** Last update Sat Mar 29 13:45:24 2014 EGLOFF Julien
+** Last update Fri Nov 20 21:11:36 2015 EGLOFF Julien
 */
 
 #include "libmy.h"
 
-char	*my_strncat(char *str1, char *str2, int n)
+char	*my_strncat(char *str1, const char *str2, int n)
 {
   int	i;
   int	ii;

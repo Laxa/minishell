@@ -5,15 +5,13 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 13 16:09:23 2015 Julien EGLOFF
-** Last update Fri Nov 20 14:10:35 2015 EGLOFF Julien
+** Last update Fri Nov 20 21:09:20 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
 #include "minishell.h"
 #include "libmy.h"
 #include "env.h"
-
-static t_env    *add_env_var(char *var, t_env *next);
 
 void    init_env(t_shell *shell, char **env)
 {
@@ -52,13 +50,13 @@ char    *get_env_value(const char *name, t_env *env)
   {
     if (!my_strncmp(name, env->var, length)
         && env->var[length] && env->var[length] == '=')
-      return (env->var + length);
+      return (env->var + length + 1);
     env = env->next;
   }
   return (NULL);
 }
 
-static t_env    *add_env_var(char *var, t_env *next)
+t_env    *add_env_var(char *var, t_env *next)
 {
   t_env         *new;
 

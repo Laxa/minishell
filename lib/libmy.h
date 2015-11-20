@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Sat Mar 29 11:52:44 2014 EGLOFF Julien
-** Last update Fri Nov 20 14:10:24 2015 EGLOFF Julien
+** Last update Fri Nov 20 21:11:57 2015 EGLOFF Julien
 */
 
 #ifndef __LIBMY_A__
@@ -25,8 +25,8 @@ int     my_power_rec(int nb, int power);
 int     my_square_root(int nb);
 int     my_is_prime(int nombre);
 int     my_find_prime_sup(int nb);
-char    *my_strcpy(char *dest, char *src);
-char    *my_strncpy(char *dest, char *src, int n);
+char    *my_strcpy(char *dest, const char *src);
+char    *my_strncpy(char *dest, const char *src, int n);
 char    *my_revstr(char *str);
 char    *my_strstr(char *str, char *to_find);
 int     my_strcmp(const char *s1, const char *s2);
@@ -40,8 +40,8 @@ int     my_str_islower(char *str);
 int     my_str_isupper(char *str);
 int     my_str_isprintable(char *str);
 int     my_showstr(char *str);
-char    *my_strcat(char *str1, char *str2);
-char    *my_strncat(char *str1, char *str2, int n);
+char    *my_strcat(char *str1, const char *str2);
+char    *my_strncat(char *str1, const char *str2, int n);
 int     my_strlcat(char *str1, char *str2, int n);
 int	my_putnbr_base(int nbr, char *base);
 int	my_getnbr_base(char *str, char *base);

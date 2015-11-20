@@ -5,13 +5,15 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 20 12:06:57 2015 EGLOFF Julien
-** Last update Fri Nov 20 14:14:48 2015 EGLOFF Julien
+** Last update Fri Nov 20 16:42:32 2015 EGLOFF Julien
 */
 
 #ifndef __BUILTINS_H__
 # define __BUILTINS_H__
 
 #include "minishell.h"
+
+# define        PWD_BUFFER_SIZE 512
 
 void    init_builtins(t_shell *shell);
 void    free_builtins(t_shell *shell);

@@ -5,12 +5,13 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Mon Nov 16 18:16:59 2015 EGLOFF Julien
-** Last update Fri Nov 20 13:26:18 2015 EGLOFF Julien
+** Last update Fri Nov 20 20:57:29 2015 EGLOFF Julien
 */
 
 #include <sys/stat.h>
 #include <sys/wait.h>
 #include <unistd.h>
+#include <errno.h>
 #include "parse.h"
 #include "libmy.h"
 #include "utils.h"
@@ -30,7 +31,12 @@ void            parse(char *cmd, t_shell *shell)
     else if (access(tab[0], F_OK | X_OK | R_OK) == 0)
       exec(tab, NULL);
     else
-      print_errno(tab[0]);
+    {
+      if (errno == ENOENT)
+        print_error_double_msg(tab[0], "command not found");
+      else
+        print_errno(tab[0]);
+    }
   }
   free_tab(tab);
 }

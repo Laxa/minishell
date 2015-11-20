@@ -5,13 +5,15 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 13 16:39:40 2015 Julien EGLOFF
-** Last update Fri Nov 20 11:24:52 2015 EGLOFF Julien
+** Last update Fri Nov 20 20:56:49 2015 EGLOFF Julien
 */
 
 #ifndef __UTILS_H__
 # define __UTILS_H__
 
-char    *get_next_line(void);
 void    print_errno(const char *msg);
+void    print_errno_double_msg(const char *msg, const char *msg2);
+void    print_error(const char *msg);
+void    print_error_double_msg(const char *msg, const char *msg2);
 
 #endif /* !_UTILS_H__ */
