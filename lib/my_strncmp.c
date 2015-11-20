@@ -5,12 +5,12 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Mar 28 10:54:21 2014 EGLOFF Julien
-** Last update Sat Mar 29 13:45:09 2014 EGLOFF Julien
+** Last update Fri Nov 20 14:09:45 2015 EGLOFF Julien
 */
 
 #include "libmy.h"
 
-int	my_strncmp(char *s1, char *s2, int n)
+int	my_strncmp(const char *s1, const char *s2, int n)
 {
   for (; n > 0; s1++, s2++, n--)
     {

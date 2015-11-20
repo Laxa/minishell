@@ -5,15 +5,12 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 20 12:06:15 2015 EGLOFF Julien
-** Last update Fri Nov 20 13:12:09 2015 EGLOFF Julien
+** Last update Fri Nov 20 14:16:29 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
 #include "builtins.h"
 #include "libmy.h"
-#include "exit.h"
-#include "pwd.h"
-#include "cd.h"
 
 static t_builtins       *add_builtins(char *name,
                                       t_builtins *next,
@@ -27,6 +24,7 @@ void            init_builtins(t_shell *shell)
   cur = add_builtins("cd", cur, &builtins_cd);
   cur = add_builtins("pwd", cur, &builtins_pwd);
   cur = add_builtins("exit", cur, &builtins_exit);
+  cur = add_builtins("env", cur, &builtins_env);
   shell->builtins = cur;
 }
 

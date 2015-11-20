@@ -5,12 +5,12 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Mar 28 10:30:04 2014 EGLOFF Julien
-** Last update Sat Mar 29 13:46:13 2014 EGLOFF Julien
+** Last update Fri Nov 20 14:09:57 2015 EGLOFF Julien
 */
 
 #include "libmy.h"
 
-int	my_strcmp(char *s1, char *s2)
+int	my_strcmp(const char *s1, const char *s2)
 {
   for (; *s1 == *s2; s1++, s2++)
     {

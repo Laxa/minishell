@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Sat Mar 29 11:52:44 2014 EGLOFF Julien
-** Last update Mon Nov 16 21:48:39 2015 EGLOFF Julien
+** Last update Fri Nov 20 14:10:24 2015 EGLOFF Julien
 */
 
 #ifndef __LIBMY_A__
@@ -29,8 +29,8 @@ char    *my_strcpy(char *dest, char *src);
 char    *my_strncpy(char *dest, char *src, int n);
 char    *my_revstr(char *str);
 char    *my_strstr(char *str, char *to_find);
-int     my_strcmp(char *s1, char *s2);
-int     my_strncmp(char *s1, char *s2, int n);
+int     my_strcmp(const char *s1, const char *s2);
+int     my_strncmp(const char *s1, const char *s2, int n);
 char    *my_strupcase(char *str);
 char    *my_strlowcase(char *str);
 char    *my_strcapitalize(char *str);

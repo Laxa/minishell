@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 13 16:09:23 2015 Julien EGLOFF
-** Last update Fri Nov 20 12:32:30 2015 EGLOFF Julien
+** Last update Fri Nov 20 14:10:35 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
@@ -41,6 +41,21 @@ void    free_env(t_shell *shell)
     cur = next;
   }
   shell->env = NULL;
+}
+
+char    *get_env_value(const char *name, t_env *env)
+{
+  int   length;
+
+  length = my_strlen(name);
+  while (env)
+  {
+    if (!my_strncmp(name, env->var, length)
+        && env->var[length] && env->var[length] == '=')
+      return (env->var + length);
+    env = env->next;
+  }
+  return (NULL);
 }
 
 static t_env    *add_env_var(char *var, t_env *next)
