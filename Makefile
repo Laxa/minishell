@@ -5,7 +5,7 @@
 ## Login   <egloff_j@etna-alternance.net>
 ## 
 ## Started on  Thu Apr  3 09:04:32 2014 EGLOFF Julien
-## Last update Mon Nov 16 12:59:53 2015 EGLOFF Julien
+## Last update Fri Nov 20 11:55:18 2015 EGLOFF Julien
 ##
 
 CC	= 	gcc
@@ -20,7 +20,7 @@ OBJ 	:= 	$(addprefix $(BDIR)/,$(SRC:%.c=%.o))
 
 RM	= 	rm -rf
 
-CFLAGS	= 	-W -Wall -Werror -ansi -pedantic -Ilib
+CFLAGS	= 	-W -Wall -Werror -Ilib
 
 LDFLAGS = 	lib/libmy.a
 
