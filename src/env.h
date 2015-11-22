@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 13 16:10:30 2015 Julien EGLOFF
-** Last update Sun Nov 22 20:25:09 2015 EGLOFF Julien
+** Last update Sun Nov 22 21:11:33 2015 EGLOFF Julien
 */
 
 #ifndef __ENV_H__
@@ -16,6 +16,7 @@
 # define        ENV_HOME        "HOME"
 # define        ENV_OLDPWD      "OLDPWD"
 # define        ENV_PWD         "PWD"
+# define        ENV_PATH        "PATH"
 
 void    init_env(t_shell *shell, char **env);
 void    free_env(t_shell *shell);

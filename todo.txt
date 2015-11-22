@@ -12,6 +12,8 @@ minishell inside minishell
 norme
 remove useless UNUSED
 remove -g flag in lib and src
+kill process if execve fail in fork
+handle /bin (dir) type
 
 CHECKLIST :
 
