@@ -11,6 +11,7 @@ redirections
 minishell inside minishell
 norme
 remove useless UNUSED
+remove -g flag in lib and src
 
 CHECKLIST :
 

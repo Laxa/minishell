@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 20 12:06:57 2015 EGLOFF Julien
-** Last update Fri Nov 20 16:42:32 2015 EGLOFF Julien
+** Last update Sun Nov 22 20:10:09 2015 EGLOFF Julien
 */
 
 #ifndef __BUILTINS_H__
@@ -14,6 +14,7 @@
 #include "minishell.h"
 
 # define        PWD_BUFFER_SIZE 512
+# define        CD_DASH         '-'
 
 void    init_builtins(t_shell *shell);
 void    free_builtins(t_shell *shell);

@@ -5,7 +5,7 @@
 ## Login   <egloff_j@etna-alternance.net>
 ## 
 ## Started on  Thu Apr  3 09:04:32 2014 EGLOFF Julien
-## Last update Mon Nov 16 21:48:52 2015 EGLOFF Julien
+## Last update Sun Nov 22 20:36:12 2015 EGLOFF Julien
 ##
 
 CC	= gcc
@@ -57,7 +57,7 @@ OBJ	= $(SRC:%.c=%.o)
 
 RM	= rm -f
 
-CFLAGS	= -W -Wall -Werror -ansi -pedantic
+CFLAGS	= -W -Wall -Werror -ansi -pedantic -g
 
 LDFLAGS = -I.
 
