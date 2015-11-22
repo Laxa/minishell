@@ -5,18 +5,18 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 20 21:08:40 2015 EGLOFF Julien
-** Last update Sun Nov 22 20:56:21 2015 EGLOFF Julien
+** Last update Mon Nov 23 00:10:47 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
 #include "libmy.h"
 #include "env.h"
 
-void            set_env_value(const char *key, const char *value, t_shell *shell)
+void    set_env_value(const char *key, const char *value, t_shell *shell)
 {
-  int           size;
-  t_env         *cur;
-  char          *var;
+  int   size;
+  t_env *cur;
+  char  *var;
 
   size = my_strlen(key) + my_strlen(value) + 2;
   cur = get_env_ptr(key, shell->env);
