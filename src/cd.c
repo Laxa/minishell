@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 20 12:33:14 2015 EGLOFF Julien
-** Last update Mon Nov 23 10:10:13 2015 EGLOFF Julien
+** Last update Mon Nov 23 10:12:19 2015 EGLOFF Julien
 */
 
 #include "builtins.h"
@@ -37,7 +37,7 @@ static void     cd_home(char *cwd, t_shell *shell)
   char          *home;
 
   home = get_env_value(ENV_HOME, shell->env);
-  if (!my_strlen(home))
+  if (!home || !my_strlen(home))
     print_error("cd: HOME not set");
   else if (chdir(home))
     print_errno_double_msg("cd", home);

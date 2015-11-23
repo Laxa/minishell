@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Mon Nov 16 18:16:59 2015 EGLOFF Julien
-** Last update Mon Nov 23 00:08:48 2015 EGLOFF Julien
+** Last update Mon Nov 23 10:44:18 2015 EGLOFF Julien
 */
 
 #include <sys/stat.h>
@@ -101,6 +101,7 @@ static void     exec(char **tab, char **env, const char *full_path)
   pid = fork();
   if (pid == 0)
   {
+    reset_signals_state();
     if (full_path != NULL)
       xexecve(full_path, tab, env);
     else

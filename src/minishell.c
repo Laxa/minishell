@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 13 15:52:09 2015 Julien EGLOFF
-** Last update Fri Nov 20 13:57:44 2015 EGLOFF Julien
+** Last update Mon Nov 23 10:43:17 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
@@ -33,6 +33,7 @@ static void     init_minishell(char **env)
 {
   shell = xmalloc(sizeof(t_shell));
   shell->quit = 0;
+  init_signals();
   init_builtins(shell);
   init_env(shell, env);
 }

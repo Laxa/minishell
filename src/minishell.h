@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 13 15:51:45 2015 Julien EGLOFF
-** Last update Fri Nov 20 13:12:41 2015 EGLOFF Julien
+** Last update Mon Nov 23 10:45:16 2015 EGLOFF Julien
 */
 
 #ifndef __MINISHELL_H__
@@ -38,5 +38,8 @@ struct  s_env
   t_env *next;
   char  *var;
 };
+
+void    init_signals(void);
+void    reset_signals_state(void);
 
 #endif /* !__MINISHELL_H__ */
