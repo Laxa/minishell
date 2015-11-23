@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 20 12:33:14 2015 EGLOFF Julien
-** Last update Sun Nov 22 20:51:10 2015 EGLOFF Julien
+** Last update Mon Nov 23 10:10:13 2015 EGLOFF Julien
 */
 
 #include "builtins.h"
@@ -18,7 +18,7 @@ static void     cd_home(char *cwd, t_shell *shell);
 static void     cd_dash(char *cwd, t_shell *shell);
 static void     cd_other(char *cwd, const char *path, t_shell *shell);
 
-void    builtins_cd(UNUSED char **argv, UNUSED t_shell *shell)
+void    builtins_cd(char **argv, t_shell *shell)
 {
   char  cwd[PWD_BUFFER_SIZE];
 

@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 20 21:08:40 2015 EGLOFF Julien
-** Last update Mon Nov 23 00:10:47 2015 EGLOFF Julien
+** Last update Mon Nov 23 10:08:26 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
@@ -69,6 +69,7 @@ void    unset_env_key(const char *key, t_shell *shell)
       else
         shell->env = cur->next;
       free(cur);
+      return;
     }
     prev = cur;
     cur = cur->next;

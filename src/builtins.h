@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 20 12:06:57 2015 EGLOFF Julien
-** Last update Sun Nov 22 20:10:09 2015 EGLOFF Julien
+** Last update Mon Nov 23 10:04:17 2015 EGLOFF Julien
 */
 
 #ifndef __BUILTINS_H__
@@ -22,5 +22,7 @@ void    builtins_env(char **argv, t_shell *shell);
 void    builtins_pwd(char **argv, t_shell *shell);
 void    builtins_cd(char **argv, t_shell *shell);
 void    builtins_exit(char **argv, t_shell *shell);
+void    builtins_setenv(char **argv, t_shell *shell);
+void    builtins_unsetenv(char **argv, t_shell *shell);
 
 #endif /* !__BUILTINS_H__ */
