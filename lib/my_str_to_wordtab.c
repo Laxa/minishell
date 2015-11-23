@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Mon Mar 31 18:49:41 2014 EGLOFF Julien
-** Last update Fri Nov 20 13:46:52 2015 EGLOFF Julien
+** Last update Mon Nov 23 10:57:48 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
@@ -62,7 +62,8 @@ static int      size_next_word(char *str, int i)
   int	size;
 
   size = 0;
-  while (str[i] != ' ' && str[i] != '\n' && str[i] != '\t')
+  while (str[i] != ' ' && str[i] != '\n' && str[i] != '\t'
+         && str[i] != '\'' && str[i] != '"')
   {
     size++;
     i++;
@@ -80,11 +81,13 @@ static int      number_of_word(char *str)
   length = my_strlen(str);
   for (i = 0; i < length; i++)
   {
-    if (str[i] != ' ' && str[i] != '\n' && str[i] != '\t')
+    if (str[i] != ' ' && str[i] != '\n' && str[i] != '\t'
+        && str[i] != '\'' && str[i] != '"')
     {
       word++;
       while (i < length && str[i] != ' '
-             && str[i] != '\n' && str[i] != '\t')
+             && str[i] != '\n' && str[i] != '\t'
+             && str[i] != '\'' && str[i] != '"')
         i++;
     }
   }
