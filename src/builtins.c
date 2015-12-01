@@ -5,7 +5,7 @@
 ** Login   <egloff_j@etna-alternance.net>
 ** 
 ** Started on  Fri Nov 20 12:06:15 2015 EGLOFF Julien
-** Last update Mon Nov 23 09:55:03 2015 EGLOFF Julien
+** Last update Tue Dec  1 19:29:04 2015 EGLOFF Julien
 */
 
 #include <stdlib.h>
@@ -26,9 +26,7 @@ void            init_builtins(t_shell *shell)
   cur = add_builtins("exit", cur, &builtins_exit);
   cur = add_builtins("env", cur, &builtins_env);
   cur = add_builtins("setenv", cur, &builtins_setenv);
-  cur = add_builtins("set", cur, &builtins_setenv);
   cur = add_builtins("unsetenv", cur, &builtins_unsetenv);
-  cur = add_builtins("unset", cur, &builtins_unsetenv);
   shell->builtins = cur;
 }
 
