@@ -2,7 +2,7 @@
 ** utils.h for minishell in /Users/laxa/Documents/C/minishell/src
 ** 
 ** Made by Julien EGLOFF
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Nov 13 16:39:40 2015 Julien EGLOFF
 ** Last update Mon Nov 23 00:07:03 2015 EGLOFF Julien

@@ -2,7 +2,7 @@
 ** builtins_env.c for minishell in /home/laxa/Documents/minishell
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Nov 20 14:13:19 2015 EGLOFF Julien
 ** Last update Fri Nov 20 14:17:53 2015 EGLOFF Julien

@@ -1,4 +1,4 @@
-# minishell is a school project for ETNA
+# minishell
 
 Implementing some basic features from shell like :
 

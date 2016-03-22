@@ -2,7 +2,7 @@
 ** env.c for minishell in /Users/laxa/Documents/C/minishell
 ** 
 ** Made by Julien EGLOFF
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Nov 13 16:09:23 2015 Julien EGLOFF
 ** Last update Fri Nov 20 21:09:20 2015 EGLOFF Julien

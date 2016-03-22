@@ -2,7 +2,7 @@
 ** pwd.c for minishell.c in /home/laxa/Documents/minishell
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Nov 20 12:35:19 2015 EGLOFF Julien
 ** Last update Fri Nov 20 16:44:50 2015 EGLOFF Julien

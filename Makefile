@@ -2,7 +2,7 @@
 ## Makefile for Makefile for libmy in /Users/laxa/Documents/Piscine/C/Jour_08/egloff_j/Makefile
 ## 
 ## Made by EGLOFF Julien
-## Login   <egloff_j@etna-alternance.net>
+## Login   <laxa>
 ## 
 ## Started on  Thu Apr  3 09:04:32 2014 EGLOFF Julien
 ## Last update Mon Nov 23 10:45:46 2015 EGLOFF Julien

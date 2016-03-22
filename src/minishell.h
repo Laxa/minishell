@@ -2,7 +2,7 @@
 ** minishell.h for minishell in /Users/laxa/Documents/C/minishell
 ** 
 ** Made by Julien EGLOFF
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Nov 13 15:51:45 2015 Julien EGLOFF
 ** Last update Mon Nov 23 10:45:16 2015 EGLOFF Julien

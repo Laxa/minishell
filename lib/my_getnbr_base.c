@@ -2,7 +2,7 @@
 ** my_getnbr_base.c for my_getnbr_base in /Users/laxa/Documents/Piscine/C/Jour_04/egloff_j/my_getnbr_base
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Mar 28 14:57:41 2014 EGLOFF Julien
 ** Last update Tue Apr  1 12:10:25 2014 EGLOFF Julien

@@ -2,7 +2,7 @@
 ** my_str_to_wordtab.c for my_str_to_word_tab in /Users/laxa/Documents/Piscine/C/Jour_06
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Mon Mar 31 18:49:41 2014 EGLOFF Julien
 ** Last update Mon Nov 23 10:57:48 2015 EGLOFF Julien

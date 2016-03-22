@@ -2,7 +2,7 @@
 ** my_sort_int_tab.c for my sort int tab in /Users/laxa/Documents/Piscine/C/Jour_02/egloff_j/my_sort_int_tab
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Tue Mar 25 11:54:09 2014 EGLOFF Julien
 ** Last update Sat Mar 29 13:47:38 2014 EGLOFF Julien

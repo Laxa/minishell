@@ -2,7 +2,7 @@
 ** builtins_setenv.c for minishell in /home/laxa/Documents/minishell
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Mon Nov 23 09:55:53 2015 EGLOFF Julien
 ** Last update Tue Dec  1 19:28:29 2015 EGLOFF Julien

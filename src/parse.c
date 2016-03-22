@@ -2,7 +2,7 @@
 ** parse.c for minishell in /home/laxa/Documents/minishell
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Mon Nov 16 18:16:59 2015 EGLOFF Julien
 ** Last update Mon Nov 23 10:44:18 2015 EGLOFF Julien

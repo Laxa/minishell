@@ -2,7 +2,7 @@
 ** my_putnbr_base.c for my_putnbr_base in /Users/laxa/Documents/Piscine/C/Jour_04/egloff_j/my_putnbr_base
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Mar 28 14:39:31 2014 EGLOFF Julien
 ** Last update Sat Mar 29 13:51:00 2014 EGLOFF Julien

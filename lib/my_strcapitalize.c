@@ -2,7 +2,7 @@
 ** my_strcapitalize.c for my_strcapitalize in /Users/laxa/Documents/Piscine/C/Jour_04/egloff_j/my_strcapitalize
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Mar 28 11:56:30 2014 EGLOFF Julien
 ** Last update Sat Mar 29 13:52:14 2014 EGLOFF Julien

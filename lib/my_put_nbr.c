@@ -2,7 +2,7 @@
 ** my_put_nbr.c for my_put_nbr in /Users/laxa/Documents/Piscine/C/Jour_01/egloff_j/my_put_nbr
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Mon Mar 24 12:20:12 2014 EGLOFF Julien
 ** Last update Sat Mar 29 13:48:57 2014 EGLOFF Julien

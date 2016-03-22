@@ -2,7 +2,7 @@
 ** my_showstr.c for my_showstr in /Users/laxa/Documents/Piscine/C/Jour_04/egloff_j/my_showstr
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Mar 28 16:08:16 2014 EGLOFF Julien
 ** Last update Sat Mar 29 13:48:11 2014 EGLOFF Julien

@@ -2,7 +2,7 @@
 ** print.c for minishell in /home/laxa/Documents/minishell
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Mon Nov 23 00:06:30 2015 EGLOFF Julien
 ** Last update Mon Nov 23 00:07:55 2015 EGLOFF Julien

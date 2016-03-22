@@ -2,7 +2,7 @@
 ** my_find_prime_sup.c for my_find_prime_sup in /Users/laxa/Documents/Piscine/C/Jour_03/egloff_j/my_find_prime_sup
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Thu Mar 27 12:12:01 2014 EGLOFF Julien
 ** Last update Sat Mar 29 13:49:58 2014 EGLOFF Julien

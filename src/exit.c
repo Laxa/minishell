@@ -2,7 +2,7 @@
 ** exit.c for minishell in /home/laxa/Documents/minishell/src
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Nov 20 13:10:21 2015 EGLOFF Julien
 ** Last update Fri Nov 20 14:17:20 2015 EGLOFF Julien

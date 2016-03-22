@@ -2,7 +2,7 @@
 ** my_strncmp.c for my_strncmp in /Users/laxa/Documents/Piscine/C/Jour_04/egloff_j/my_strncmp
 ** 
 ** Made by EGLOFF Julien
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Mar 28 10:54:21 2014 EGLOFF Julien
 ** Last update Fri Nov 20 14:09:45 2015 EGLOFF Julien

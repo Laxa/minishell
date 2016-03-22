@@ -2,7 +2,7 @@
 ** xmalloc.c for xmalloc in /Users/laxa/Documents/C/minishell/lib
 ** 
 ** Made by Julien EGLOFF
-** Login   <egloff_j@etna-alternance.net>
+** Login   <laxa>
 ** 
 ** Started on  Fri Nov 13 16:43:24 2015 Julien EGLOFF
 ** Last update Fri Nov 13 16:46:57 2015 Julien EGLOFF
